@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0a0a0a"
+    android:paddingHorizontal="28dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- شعار التطبيق (الدائرة التي بداخلها حرف S) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:cardBackgroundColor="#141416"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="S"
+                android:textColor="#f2f2f2"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- اسم التطبيق -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="SHARP SPEAK"
+            android:textColor="#f5f5f5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2" />
+
+        <!-- الوصف (Tagline) -->
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Master English through real voice conversations with your AI speaking partner."
+            android:textColor="#9a9a9e"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- الميزة الأولى -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:cardBackgroundColor="#141416"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_btn_speak_now"
+                    app:tint="#8b5cf6" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speak naturally, no typing needed"
+                android:textColor="#d8d8db"
+                android:textSize="13sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- الميزة الثانية -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:cardBackgroundColor="#141416"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/sym_action_chat"
+                    app:tint="#8b5cf6" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get instant, friendly feedback"
+                android:textColor="#d8d8db"
+                android:textSize="13sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- الميزة الثالثة -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:cardBackgroundColor="#141416"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:src="@android:drawable/ic_menu_sort_by_size"
+                    app:tint="#8b5cf6" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track your progress over time"
+                android:textColor="#d8d8db"
+                android:textSize="13sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <!-- زر البدء -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/startChatButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            app:backgroundTint="#6d28d9"
+            app:cornerRadius="24dp"
+            android:text="Get started"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
